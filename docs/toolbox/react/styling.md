@@ -10,9 +10,11 @@ permalink: /toolbox/react/styling
 ---
 
 # Styling with React with Styled Components
+
 Styling in React can be done in a variety of ways. One of the most popular ways is to use a library called styled-components. Styled-components allows you to write CSS in your JavaScript files, which can make your code more readable and maintainable.
 
 ## Installation
+
 To get started with styled-components, you need to install it in your project. You can do this by running the following command:
 
 ```bash
@@ -20,6 +22,7 @@ npm install styled-components
 ```
 
 ## Usage
+
 Once you have installed styled-components, you can start using it in your React components. Here is an example of how you can use styled-components to style a button component:
 
 ```jsx
@@ -43,9 +46,10 @@ function App() {
 }
 
 export default App;
-``` 
+```
 
 ## Extened Usage
+
 An example of more styles in a single document. Where we have a header, a navigation menu, a content layout, and an error banner. This example is from an application that uses React Router for routing.
 
 ```jsx
@@ -177,7 +181,7 @@ const App = () => {
         <MainContent>
           {errorMessage && <ErrorBanner>{errorMessage}</ErrorBanner>}
           <Outlet
-            context={{ setErrorMessage, setShowRenderError, showRenderError }}
+            context={% raw %}{{ setErrorMessage, setShowRenderError, showRenderError }}{% endraw %}
           />
         </MainContent>
       </Content>
@@ -189,6 +193,7 @@ export default App;
 ```
 
 ### The main.jsx file
+
 ```jsx
 import React from 'react';
 import * as ReactDOM from "react-dom/client";

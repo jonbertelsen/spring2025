@@ -99,7 +99,7 @@ import { Outlet, useNavigate, useParams } from "react-router-dom";
                 navigate(`/photos/${photo.id}`); // Same as javascript: window.location.href = `/photos/${photo.id}`;
               }}
               src={photo.url}
-              style={{ width: 300, margin: 6 }}
+              style={% raw %}{{ width: 300, margin: 6 }}{% endraw %}
             />
         );
       })}

@@ -115,11 +115,11 @@ Here, the `user?.role === "admin"` condition ensures that only users with an "ad
 
 Guard conditions can also be helpful for handling errors in a React component, providing fallbacks or error messages.
 
-```react
+```javascript
 function DataDisplay({ data, error }) {
   return (
     <div>
-      {error && <p style={{ color: "red" }}>Error: {error.message}</p>}
+      {error && <p style={% raw %}{{ color: "red" }}{% endraw %}>Error: {error.message}</p>}
       {data ? <p>Data: {data}</p> : <p>No data available.</p>}
     </div>
   );
